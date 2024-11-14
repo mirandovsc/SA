@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="form.js"></script>
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <dialog id="dial">
+        <div class="top">
+            <p>Bem vindo ao meu site!</p> 
+        </div>
+        <div class="bottom">
+            <p id="aviso">Todos os seus dados foram salvos</p>
+            <button id="close">Close</button>
+        </div>
+        
+    </dialog>
+    <main>
+
+       <a id="link-voltar" href="#"><img id="voltar" src="imagens/Voltar-X.png" alt="Voltar"></a>
+
+       <img id="logo" src="imagens/logo.jpg" alt="Logo">
+
+       <h1>Login</h1>
+
+       <div class="formularios">
+        <input type="text" class="form" id="nome" placeholder="Nome" required>
+        <input type="email" class="form" id="email" placeholder="Email" required>
+        <input type="password" class="form" id="senha" placeholder="Senha" required>
+        <input type="text" class="form" id="ende" placeholder="Endereço" required>
+
+        <button onclick="entrar()" id="btn">Entrar</button>
+       </div>
+       <div class="google">
+        <h2>Entrar com</h2>
+        <img src="imagens/google.png" alt="Google">
+       </div>
+    </main>
+</body>
+</html>
